@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<script>
+    $salario = prompt("Informe seu salário")
+    $porcent = 0
+    if ($salario < 1100.01) {
+        $porcent = 0.075
+        document.write(" <center>   Porcentagem: 7.5% Porcentagem aliquota: 0.075")
+    }
+    else if ($salario < 2203.49) {
+        $porcent = 0.09
+        document.write("<center>  Porcentagem:9% Porcentagem aliquota: 0.09 ")
+    }
+    else if ($salario < 3305.23) {
+        $porcent = 0.12
+        document.write("<center>  Porcentagem: 12% Porcentagem aliquota: 0.12")
+    }
+    else document.write("<center> Porcentagem: 14% Porcentagem aliquota: 0.14")
+    $porcent = 0.14
+    document.write(" <center> <font color='red' size='7'>  INSS </font>")
+    document.write("<table border='1' width='600'>")
+    document.write("<tr bgcolor='#9932CC' align='center'>")
+    document.write(" <td width='350' align='center'><B>Salário</B></td>")
+    document.write(" <td width='350' align='center'><B>Porcentagem</B></td>")
+    document.write(" </tr>")
+
+    document.write("<tr bgcolor='#9932CC' align='center'>")
+    document.write(" <td width='350' align='center'><B>" + $salario + "</B></td>")
+    document.write(" <td width='350' align='center'><B> "+ $porcent + "</B></td>")
+    document.write(" </tr>")
+    document.write("</table>")
+
+
+</script>
